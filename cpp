@@ -194,7 +194,7 @@ int main()
     std::cout << "Voce pagou: R$" << sindicato << "ao sindicato." << std::endl;
     std::cout << "Seu salario liquido e de: R$" << salarioLiq << std::endl;
 }
-// 11. Faça um código para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+// 10. Faça um código para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
 #include <iostream>
 
 int main()
@@ -217,4 +217,24 @@ int main()
      }
 }
 
+//12. Faça um código que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+
+#include <iostream>
+
+int main()
+{
+	int arquivo;
+	int velocidade;
+	int tempo;
+
+	std::cout << "Digite o tamanho do arquivo para download em MB: ";
+	std::cin >> arquivo;
+
+	std::cout << "Agora digite a velocidade da sua internet em Mbps: ";
+	std::cin >> velocidade;
+
+	tempo = arquivo / (velocidade * 60);
+
+	std::cout << "O tempo aproximado de download do arquivo e de: " << tempo << " minutos.";
+}
 
