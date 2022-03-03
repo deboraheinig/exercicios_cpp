@@ -194,3 +194,27 @@ int main()
     std::cout << "Voce pagou: R$" << sindicato << "ao sindicato." << std::endl;
     std::cout << "Seu salario liquido e de: R$" << salarioLiq << std::endl;
 }
+// 11. Faça um código para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+#include <iostream>
+
+int main()
+{
+    int area;
+    int totalLatas;
+    int valorTotal;
+
+    std::cout << "Digite, em metros quadrados, o tamanho da area a ser pintada.\n";
+    std::cin >> area;
+
+    totalLatas = area / 54;
+    valorTotal = totalLatas * 80;
+
+    if (area < 54) {
+        std::cout << "Uma lata de tinta será suficiente, custando R$80,00.";
+    }
+     else {
+     std::cout << "Voce ira precisar de " << totalLatas << " latas, totalizando em: R$" << valorTotal;
+     }
+}
+
+
